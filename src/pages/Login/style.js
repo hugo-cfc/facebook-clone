@@ -1,9 +1,7 @@
 import styled from "styled-components";
 import { NavLink } from "react-router-dom";
 
-export const Main = styled.main`
-  height: 100vh;
-`;
+export const Main = styled.main``;
 
 export const Container = styled.div`
   height: 75vh;
@@ -147,13 +145,62 @@ export const Footer = styled.footer`
 export const InternalFooterContainer = styled.div`
   width: 50%;
   margin: 0 auto;
+  padding-top: 20px;
+`;
+
+export const LanguagesContainer = styled.div`
+  padding: 8px 0;
+  border-bottom: 1px solid #dddfe2;
 `;
 
 export const LinkFooter = styled(NavLink)`
-  color: ${(props) => props.theme.colors.textSecundary};
+  color: ${(props) => props.theme.colors.textTertiary};
   font-size: 12px;
   text-decoration: none;
+  margin-right: ${props => props.language ? '10px' : '0px'};
   &:hover {
     text-decoration: underline;
   }
+`;
+
+export const ButtonPlusFooter = styled.button`
+  padding: 0 8px;
+  font-size: 12px;
+  font-weight: bold;
+  border: 1px solid #ccd0d5;
+  color: #8a8d91;
+  transition: 200ms;
+  &:focus {
+    outline: none;
+    background-color: #f5f6f7;
+    border-color: #ccd0d5;
+    opacity: 0.8;
+  }
+  &:hover {
+    background-color: #f5f6f7;
+    border-color: #ccd0d5;
+    opacity: 0.4;
+  }
+`;
+
+export const LinksFooterContainer = styled.div`
+  display: block;
+`;
+
+export const Ul = styled.ul`
+  padding: 0;
+  margin: 0;
+  margin-left: -20px;
+  list-style: none;
+`;
+
+export const Li = styled.li`
+  display: inline-block;
+  padding-left: 20px;
+`;
+
+export const CorporightContainer = styled.div`
+  margin: 20px 0;
+  color: ${(props) => props.theme.colors.textTertiary};
+  font-size: 11px;
 `;
