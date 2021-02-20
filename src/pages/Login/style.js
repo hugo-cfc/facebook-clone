@@ -1,10 +1,12 @@
 import styled from "styled-components";
 import { NavLink } from "react-router-dom";
 
-export const Main = styled.main``;
+export const Main = styled.main`
+  height: 100vh;
+`;
 
 export const Container = styled.div`
-  height: 75vh;
+  height: 75%;
   width: 50%;
   margin: 0 auto;
   padding-top: 10%;
@@ -86,6 +88,10 @@ export const Button = styled.button`
   }
 `;
 
+export const LinkButton = styled(NavLink)`
+  text-decoration: none;
+`
+
 export const ContainerLink = styled.div`
   padding-top: 15px;
   padding-bottom: 20px;
@@ -138,7 +144,7 @@ export const CreatePageLink = styled(NavLink)`
 `;
 
 export const Footer = styled.footer`
-  height: 25vh;
+  height: 25%;
   background: ${(props) => props.theme.colors.primary};
 `;
 
