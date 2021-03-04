@@ -3,7 +3,7 @@ import React from "react";
 import FacebookLogo from "../../images/facebookCircle.svg";
 import SearchIcon from "../../images/searchicon.svg";
 
-import { ContainerGeneral, FirstContainer, Logo, LogoInput, InputContainer, SearchInput, MiddleContainer, Ul, Li, LastContainer } from "./style";
+import { ContainerGeneral, FirstContainer, Logo, LogoInput, InputContainer, SearchInput, MiddleContainer, Ul, Li, LinksNav, LastContainer } from "./style";
 
 export default function Header() {
   return (
@@ -18,16 +18,24 @@ export default function Header() {
         </FirstContainer>
         <MiddleContainer>
           <Ul>
-            <Li></Li>
-            <Li></Li>
-            <Li></Li>
-            <Li></Li>
-            <Li></Li>
+            <Li>
+              <LinksNav to='/'>HOME</LinksNav>
+            </Li>
+            <Li>
+              <LinksNav to='/'>VIDEOS</LinksNav>
+            </Li>
+            <Li>
+              <LinksNav to='/'>MARKET</LinksNav>
+            </Li>
+            <Li>
+              <LinksNav to='/'>GROUPS</LinksNav>
+            </Li>
+            <Li>
+              <LinksNav to='/'>GAMES</LinksNav>
+            </Li>
           </Ul>
         </MiddleContainer>
-        <LastContainer>
-          sdhakj
-        </LastContainer>
+        <LastContainer>sdhakj</LastContainer>
       </ContainerGeneral>
     </>
   );
