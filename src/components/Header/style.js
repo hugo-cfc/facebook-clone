@@ -8,7 +8,7 @@ export const ContainerGeneral = styled.div`
   padding: 0 16px;
   background: ${(props) => props.theme.colors.primary};
   display: flex;
-  justify-content:center;
+  justify-content: center;
 `;
 
 export const FirstContainer = styled.div`
@@ -49,9 +49,11 @@ export const MiddleContainer = styled.div`
   align-self: center;
   margin-left: auto;
   margin-right: auto;
+  height: 100%;
 `;
 
 export const Ul = styled.ul`
+  height: 100%;
   padding: 0;
   margin: 0;
   background: ${(props) => props.theme.colors.primary};
@@ -59,13 +61,23 @@ export const Ul = styled.ul`
 `;
 
 export const Li = styled.li`
+  height: 100%;
   display: inline;
 `;
 
 export const LinksNav = styled(NavLink)`
-  text-decoration: none;
+  width: 111.6px;
+  height: 100%;
   padding: 2px 10px;
   display: inline-block;
+  border-bottom: 2px solid red;
+  text-decoration: none;
+`;
+
+export const NavButtons = styled.svg`
+  width: 28px;
+  height: 28px;
+  fill: ${(props) => props.theme.colors.secundary};
 `;
 
 export const LastContainer = styled.div`
